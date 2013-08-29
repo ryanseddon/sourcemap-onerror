@@ -13,5 +13,12 @@
                 <script src="js/fizzbuzz.min.js"></script>
         </head>
         <body>
+
+			<h1>Source Map onerror</h1>
+
+			<p>Lookup original location from window.onerror by querying source map. Only works in browsers which support the 4th argument (column number). Chrome Canary and Opera Developer.</p>
+
+			<p>This should return column number 117 but doesn't for some reason? So the source map lookup in Chrome Canary is incorrect.</p>
+
         </body>
 </html>
