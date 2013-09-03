@@ -10,6 +10,7 @@
                 <script src="js/source-map.js"></script>
                 <script src="js/map.js"></script>
                 <script src="js/lookup-error.js"></script>
+                <script src="js/test.min.js"></script>
                 <script src="js/fizzbuzz.min.js"></script>
         </head>
         <body>
@@ -18,7 +19,7 @@
 
 			<p>Lookup original location from window.onerror by querying source map. Only works in browsers which support the 4th argument (column number). Chrome Canary and Opera Developer.</p>
 
-			<p>This should return column number 117 but doesn't for some reason? So the source map lookup in Chrome Canary is incorrect.</p>
+			<p>There are two test files that both call an undefined function (foobar) the first (test.min.js) returns the correct details doing a source map lookup the second is way off.</p>
 
         </body>
 </html>
