@@ -37,7 +37,7 @@ function parseTryCatchStackTrace(err) {
     stack = lines[1].split(':').reverse().splice(0, 2);
 
     return {
-        column: 0,
+        column: stack[0],
         line: stack[1]
     };
 }
